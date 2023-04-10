@@ -45,3 +45,14 @@ export interface Team {
 }
 
 export type MeetingType = "RETRO" | "DAILY"
+
+export interface MeetingConfig {
+  _id: MongoObjectId
+  team_id?: MongoObjectId,
+  team_id_str?: MongoObjectId,
+  desired_duration: number,
+  config_name: string,
+  description: string,
+  meeting_type: MeetingType,
+}
+

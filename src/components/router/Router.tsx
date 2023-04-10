@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <SelectTeam />
   },
   {
-    path: "/meeting",
+    path: "/meeting/:meeting_id",
     element: <Meeting />
   },
   {
